@@ -9,8 +9,18 @@
 
     <name>wiremock-maven-plugin Maven Plugin</name>
 
-    <!-- FIXME change it to the project's website -->
-    <url>http://maven.apache.org</url>
+    <distributionManagement>
+        <repository>
+            <id>moip-releases</id>
+            <name>antigua.moip.com.br-releases</name>
+            <url>http://artifactory.aws.internet:8081/artifactory/libs-release-local</url>
+        </repository>
+        <snapshotRepository>
+            <id>moip-snapshots</id>
+            <name>antigua.moip.com.br-snapshots</name>
+            <url>http://artifactory.aws.internet:8081/artifactory/libs-snapshot-local</url>
+        </snapshotRepository>
+    </distributionManagement>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
